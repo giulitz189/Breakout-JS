@@ -1,0 +1,94 @@
+﻿html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border: 0;
+  overflow: hidden;
+  display: block;
+}
+
+div {
+  width: 520px;
+  height: 540px;
+  background: #000;
+}
+
+.menu_button {
+  background-color: rgba(255, 255, 0, 0);
+  color: yellow;
+  transition: 0.3s;
+}
+
+.menu_button:hover {
+  background-color: rgba(255, 255, 0, 1);
+  color: black;
+}
+
+.menu_button:active {
+  background-color: rgba(255, 255, 0, 1);
+  color: black;
+  transform: scale3d(0.9, 0.9, 0.9);
+}
+
+.db_button {
+  background-color: rgba(255, 0, 0, 0);
+  color: black;
+  transition: 0.3s;
+}
+
+.db_button:hover {
+  background-color: rgba(255, 0, 0, 1);
+  color: white;
+}
+
+.db_button:active {
+  background-color: rgba(255, 0, 0, 1);
+  color: white;
+  transform: scale3d(0.9, 0.9, 0.9);
+}
+
+.edit_button {
+  background-color: rgba(255, 255, 0, 1);
+  color: black;
+  transition: 0.3s;
+}
+
+.edit_button:active {
+  transform: scale3d(0.9, 0.9, 0.9);
+}
+
+canvas {
+  background: inherit;
+  display: block;
+  margin: 0 auto;
+}
+
+@keyframes textBounceInDown {
+  0% {top: -300px;}
+  14% {top: 100px;}
+  28% {top: -20px;}
+  42% {top: 40px;}
+  57% {top: 10px;}
+  71% {top: 25px;}
+  85% {top: 18px;}
+  100% {top: 20px;}
+}
+
+@keyframes buttonBounceIn {
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+  20% { transform: scale3d(1.1, 1.1, 1.1); }
+  40% { transform: scale3d(0.9, 0.9, 0.9); }
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+  80% { transform: scale3d(0.97, 0.97, 0.97); }
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+}
